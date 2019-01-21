@@ -26,6 +26,7 @@ export class API {
           }
         }
       }
+
     });
 
     promise.catch(function (error) {
@@ -49,10 +50,12 @@ export class API {
           outputDiv2.innerHTML += "<li>" + body.data[i].name + " " + body.data[i].name + "</li>";
         }
       }
+
     });
 
     promise.catch(function (error) {
       outputDiv2.innerHTML = "API returned error: " + error;
     })
+
   }
 }
